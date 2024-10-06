@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Fondo negro más oscuro */
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Centrado verticalmente */
+        }
+        .profile {
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Estilo circular para la foto de perfil */
+            border: 4px solid #9300FF; /* Borde morado */
+            box-shadow: 0 4px 15px rgba(147, 0, 255, 0.6); /* Sombra para darle más presencia */
+        }
+        .profile-name {
+            margin-top: 15px;
+            font-size: 26px;
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+        .social-buttons {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 400px;
+        }
+        .social-buttons a {
+            display: block;
+            background-color: #9300FF;
+            color: #ffffff;
+            padding: 15px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra debajo de los botones */
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .social-buttons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .social-buttons a:hover::before {
+            opacity: 1;
+        }
+        .social-buttons a:hover {
+            background-color: #7a00cc;
+            transform: translateY(-3px); /* Efecto de levitación al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/TikTok_profile.jpg" alt="Foto de perfil de TikTok">
+            <div class="profile-name">Tu Nombre</div>
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://www.tiktok.com/@tucuenta" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank">Instagram</a>
+            <a href="https://twitter.com/tucuenta" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/tucuenta" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com/tucuenta" target="_blank">Facebook</a>
+            <a href="https://www.snapchat.com/tucuenta" target="_blank">Snapchat</a>
+        </div>
+    </div>
+</body>
+</html>
